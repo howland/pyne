@@ -86,9 +86,7 @@ def bricc(inputdict_unchecked):
         input_line : input line to be used, as if bricc was being used in the interactive
                      command line style.  This line will be passed in verbatim to the
                      bricc executable, and default output file names will be used.  For
-                     generating new records, or any operation that produces output files,
-                     '<CR>' should be appended on the end of input_line, to force default
-                     file names to be used.
+                     generating new records, or any operation that produces output files.
     Output Dictionary Values:
         input_line : user defined input
         output_file_directory : the directory all produced bricc output files will be 
@@ -97,8 +95,6 @@ def bricc(inputdict_unchecked):
     NOTE:
         All the various ouptput files bricc can generate are found in the
 
-        'output_file_directory' path.  '<CR>' must be appended to 'input_line' for this
-        to work properly.
     """
     exe_path = path_to_exe('bricc')
     exe_dir = path_to_exe('')
